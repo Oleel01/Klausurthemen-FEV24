@@ -1,0 +1,11 @@
+table td:first-child p {
+    background-color: var(--pruefungFarbe);
+}
+
+#startseitebutton {
+    text-align: left;
+}
+
+h1 {
+    color: var(--pruefungFarbe);
+}

@@ -2,28 +2,61 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --pSize: clamp(.8rem, 2vw, 1.2rem);
+    --h1Size: clamp(1rem, 6vw, 3rem);
+    --h3Size: clamp(1rem, 3vw, 1.5rem);
+    --klausurFarbe: rgb(88, 191, 255);
+    --pruefungFarbe: rgb(255, 170, 12);
+    --erledigtFarbe: rgb(110, 110, 110);
+}
+
 body {
     background: #c9c9c9;
     background: linear-gradient(0deg, rgb(211, 211, 211) 0%, rgba(242, 242, 242, 1) 20%, rgba(255, 255, 255, 1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 1.5rem);
-    margin: 0;
+    margin: 0 10px;
 }
 
 html {
     margin: 0;
+    height: 100%;
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--h1Size);
     margin: 1.5rem 0 0 0;
     text-decoration: underline;
 }
 
 p {
     margin: 0;
+    font-size: var(--pSize);
+}
+
+li {
+    font-size: var(--pSize);
+}
+
+h3 {
+    font-size: var(--h3Size);
+    margin: .5rem;
+}
+
+.ueberschrift {
+    padding: 10px;
+}
+
+.tabelle {
+    overflow-x: scroll;
+    padding: 0 10px;
+}
+
+.erledigt {
+    color: var(--erledigtFarbe);
+    text-decoration: line-through;
 }
 
 table {
@@ -36,7 +69,6 @@ table tr:nth-child(even) {
 }
 
 table td:first-child p {
-    background-color: rgba(88, 191, 255, 0.885);
     padding: 5px;
     border-radius: 5px;
 }
@@ -46,13 +78,10 @@ td {
     border-bottom: 1px solid #cfcfcf;
 }
 
-table th {
-    margin: 0;
-}
-
 table td {
     text-align: left;
     padding: .8rem;
+    min-width: fit-content;
 }
 
 ol {
@@ -60,7 +89,25 @@ ol {
     padding: 0;
 }
 
-.erledigt {
-    color: green;
-    text-decoration: line-through;
+button {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+    font-size: var(--pSize);
+    padding: 6px 24px;
+}
+
+button:hover {
+    background: linear-gradient(to top, #e9e9e9 5%, #f9f9f9 100%);
+    background-color: #e9e9e9;
+    text-decoration: underline;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+    color: rgb(71, 71, 71);
 }

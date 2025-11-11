@@ -1,0 +1,11 @@
+table td:first-child p {
+    background-color: var(--klausurFarbe);
+}
+
+#pruefungenbutton {
+    text-align: right;
+}
+
+h1 {
+    color: var(--klausurFarbe);
+}
