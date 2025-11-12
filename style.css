@@ -6,6 +6,7 @@
     --pSize: clamp(.8rem, 2vw, 1.1rem);
     --h1Size: clamp(1rem, 6vw, 3rem);
     --h3Size: clamp(1rem, 3vw, 1.5rem);
+    --h4Size: clamp(1rem, 2.5vw, 1.3rem);
     --klausurFarbe: rgb(88, 191, 255);
     --pruefungFarbe: rgb(255, 170, 12);
     --erledigtFarbe: rgb(110, 110, 110);
@@ -50,6 +51,7 @@ h3 {
 }
 
 h4 {
+    font-size: var(--h4Size);
     margin: .5rem;
 }
 
