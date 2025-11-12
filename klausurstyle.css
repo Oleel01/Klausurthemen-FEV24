@@ -1,4 +1,4 @@
-table td:first-child p {
+table .datum {
     background-color: var(--klausurFarbe);
 }
 
@@ -8,4 +8,9 @@ table td:first-child p {
 
 h1 {
     color: var(--klausurFarbe);
+}
+
+table tr:hover .farbe {
+    color: var(--klausurFarbe);
+    transition: 200ms;
 }

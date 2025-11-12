@@ -79,7 +79,16 @@ table tr:nth-child(even) {
     background-color: white;
 }
 
-table td:first-child p {
+table tr {
+    transition: 200ms;
+}
+
+table tr:not(:first-child):hover {
+    background-color: #f2f2f2;
+    transition: 200ms;
+}
+
+table .datum {
     padding: 5px;
     border-radius: 5px;
 }
@@ -93,6 +102,10 @@ table td {
     text-align: left;
     padding: .8rem;
     min-width: fit-content;
+}
+
+.farbe {
+    transition: 200ms;
 }
 
 ol {
