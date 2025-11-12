@@ -9,3 +9,7 @@ table td:first-child p {
 h1 {
     color: var(--pruefungFarbe);
 }
+
+.hinweis {
+    text-align: center;
+}

@@ -3,7 +3,7 @@
 }
 
 :root {
-    --pSize: clamp(.8rem, 2vw, 1.2rem);
+    --pSize: clamp(.8rem, 2vw, 1.1rem);
     --h1Size: clamp(1rem, 6vw, 3rem);
     --h3Size: clamp(1rem, 3vw, 1.5rem);
     --klausurFarbe: rgb(88, 191, 255);
@@ -19,19 +19,23 @@ body {
     margin: 0 10px;
 }
 
+.alles {
+    min-height: 100vh;
+}
+
 html {
     margin: 0;
-    height: 100%;
 }
 
 h1 {
     text-align: center;
     font-size: var(--h1Size);
-    margin: 1.5rem 0 0 0;
+    margin: 0;
     text-decoration: underline;
 }
 
-p {
+p,
+span {
     margin: 0;
     font-size: var(--pSize);
 }
@@ -45,6 +49,10 @@ h3 {
     margin: .5rem;
 }
 
+h4 {
+    margin: .5rem;
+}
+
 .ueberschrift {
     padding: 10px;
 }
@@ -52,6 +60,7 @@ h3 {
 .tabelle {
     overflow-x: scroll;
     padding: 0 10px;
+    align-content: center;
 }
 
 .erledigt {
