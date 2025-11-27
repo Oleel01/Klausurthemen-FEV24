@@ -7,17 +7,24 @@
     --h1Size: clamp(1rem, 6vw, 3rem);
     --h3Size: clamp(1rem, 3vw, 1.5rem);
     --h4Size: clamp(1rem, 2.5vw, 1.3rem);
-    --klausurFarbe: rgb(88, 191, 255);
+    --klausurFarbe: rgb(51, 167, 255);
     --pruefungFarbe: rgb(255, 170, 12);
     --erledigtFarbe: rgb(110, 110, 110);
+    --hintergrundFarbe: white;
+    --hintergrundFarbe2: rgb(211, 211, 211);
+    --tabellenZeileHoverFarbe: rgb(182, 182, 182);
+    --schriftFarbe: black;
+    --h1UeberschriftFarbe: ;
 }
 
 body {
-    background: #c9c9c9;
-    background: linear-gradient(0deg, rgb(211, 211, 211) 0%, rgba(242, 242, 242, 1) 20%, rgba(255, 255, 255, 1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 10px;
+    /*background: #c9c9c9;
+    background: linear-gradient(0deg, rgb(211, 211, 211) 0%, rgba(242, 242, 242, 1) 20%, rgba(255, 255, 255, 1) 100%);*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-color: var(--hintergrundFarbe);
+    color: var(--schriftFarbe);
+    margin: 0 .8rem;
 }
 
 .alles {
@@ -63,6 +70,7 @@ h4 {
     overflow-x: scroll;
     padding: 0 10px;
     align-content: center;
+    margin-bottom: 2rem;
 }
 
 .erledigt {
@@ -76,7 +84,7 @@ table {
 }
 
 table tr:nth-child(even) {
-    background-color: white;
+    background-color: var(--hintergrundFarbe2);
 }
 
 table tr {
@@ -84,7 +92,7 @@ table tr {
 }
 
 table tr:not(:first-child):hover {
-    background-color: #f2f2f2;
+    background-color: var(--tabellenZeileHoverFarbe);
     transition: 200ms;
 }
 
@@ -134,4 +142,13 @@ button:active {
     position: relative;
     top: 1px;
     color: rgb(71, 71, 71);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --hintergrundFarbe: rgb(52, 52, 52);
+        --hintergrundFarbe2: rgb(40, 40, 40);
+        --tabellenZeileHoverFarbe: rgb(70, 70, 70);
+        --schriftFarbe: wheat;
+    }
 }
