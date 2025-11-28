@@ -11,10 +11,10 @@
     --pruefungFarbe: rgb(255, 170, 12);
     --erledigtFarbe: rgb(110, 110, 110);
     --hintergrundFarbe: white;
-    --hintergrundFarbe2: rgb(211, 211, 211);
-    --tabellenZeileHoverFarbe: rgb(182, 182, 182);
+    --hintergrundFarbe2: rgb(233, 233, 233);
+    --tabellenZeileHoverFarbe: rgb(218, 218, 218);
+    --tabelleTrennLinienFarbe: #cfcfcf;
     --schriftFarbe: black;
-    --h1UeberschriftFarbe: ;
 }
 
 body {
@@ -103,7 +103,7 @@ table .datum {
 
 th,
 td {
-    border-bottom: 1px solid #cfcfcf;
+    border-bottom: 1px solid var(--tabelleTrennLinienFarbe);
 }
 
 table td {
@@ -146,9 +146,10 @@ button:active {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --hintergrundFarbe: rgb(52, 52, 52);
-        --hintergrundFarbe2: rgb(40, 40, 40);
-        --tabellenZeileHoverFarbe: rgb(70, 70, 70);
-        --schriftFarbe: wheat;
+        --hintergrundFarbe: #000000;
+        --hintergrundFarbe2: #0B192C;
+        --tabellenZeileHoverFarbe: #1e3e62c6;
+        --schriftFarbe: white;
+        --tabelleTrennLinienFarbe: #9b9b9b;
     }
 }
