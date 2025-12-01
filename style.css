@@ -146,10 +146,10 @@ button:active {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --hintergrundFarbe: #000000;
-        --hintergrundFarbe2: #0B192C;
-        --tabellenZeileHoverFarbe: #1e3e62c6;
+        --hintergrundFarbe: #0D0E0D;
+        --hintergrundFarbe2: #131313;
+        --tabellenZeileHoverFarbe: #222222;
         --schriftFarbe: white;
-        --tabelleTrennLinienFarbe: #9b9b9b;
+        --tabelleTrennLinienFarbe: #444444;
     }
 }
