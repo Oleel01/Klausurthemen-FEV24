@@ -116,8 +116,16 @@ table td {
     transition: 200ms;
 }
 
+.unterstrich {
+    text-decoration: underline;
+}
+
 ol {
     list-style-position: inside;
+    padding: 0;
+}
+
+ul {
     padding: 0;
 }
 
