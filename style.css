@@ -120,6 +120,10 @@ table td {
     text-decoration: underline;
 }
 
+.leerraum {
+    padding-top: 0.5rem;
+}
+
 ol {
     list-style-position: inside;
     padding: 0;
