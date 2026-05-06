@@ -12,9 +12,20 @@ h1 {
 
 .hinweis {
     text-align: center;
+    padding: .5em;
 }
 
 table tr:hover .farbe {
     color: var(--pruefungFarbe);
+    transition: 200ms;
+}
+
+.hinweis span {
+    color: var(--pruefungFarbe);
+    font-size: var(--h3Size);
+}
+
+.hinweis span:hover {
+    color: var(--schriftFarbe);
     transition: 200ms;
 }

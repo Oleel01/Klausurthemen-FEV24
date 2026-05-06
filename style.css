@@ -5,7 +5,7 @@
 :root {
     --pSize: clamp(.9rem, 2vw, 1.1rem);
     --h1Size: clamp(1.5rem, 6vw, 3rem);
-    --h3Size: clamp(1rem, 3vw, 1.5rem);
+    --h3Size: clamp(1.1rem, 4vw, 1.5rem);
     --h4Size: clamp(1rem, 2.5vw, 1.3rem);
     --klausurFarbe: rgb(51, 167, 255);
     --pruefungFarbe: rgb(255, 170, 12);
@@ -172,10 +172,6 @@ button:active {
 
     .ueberschrift {
         padding-top: 2rem;
-    }
-
-    table {
-        border-spacing: 0.5rem;
     }
 
     table td {
